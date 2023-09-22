@@ -1,1 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marcos Tulalian</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Marcos Tulalian</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Marcos Tulalian</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./asset/picture.jpg" alt="Profile Picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello I am</p>
+        <h1 class="title">Marcos Darwin Tulalian</h1>
+        <p class="section__text__p2">Just a Student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./asset/CVTulalian.pdf')"
+          >
+            Download CV
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="location.href = './#contact'"
+          >
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./asset/linkedinlogo.jpg" 
+            alt="Profile Picture"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/marcos-tulalian-08405a292/'"
+          />
+          <img 
+            src="./asset/githublogo.webp" 
+            alt="Profile Picture"
+            class="icon"
+            onclick="location.href='https://github.com/marc00000s?tab=repositories'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get to Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+          src="./asset/picture.jpg"
+          alt="About Picture"
+          class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+              src="./asset/exp.webp"
+              alt="Experience icon"
+              class="icon"
+            />
+          <h2Education>Experience</h2Education>
+          <p>No Experience <br />College Graduate</p>
+        </div>
+        <div class="details-container">
+          <img 
+            src="./asset/TUPlogo.png" 
+            alt="TUP icon"
+            class="icon"
+         />
+        <h2>Education</h2>
+        <p>
+          Bachelor of Science in Information System
+
+        </p>
+      </div>
+    </div>
+    <div class="text-container">
+      <p>
+        After being admitted into the Bachelor of Science in Information System 
+        program at Technological University of the Philippines (TUP) in 2021, 
+        I began learning programming. I completed my chosen course of study at the University 
+        after four years of study.
+      </p>
+    </div>
+  </div>
+</div>
+<img
+  src="./asset/arrow.png"
+  alt="Arrow icon"
+  class="icon arrow"
+  onclick="location.href='./#experience'"
+/>
+</section>
+<section id="Experience"></section>
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Experience</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container">
+        <h2 class="experience-sub-title">Just A Student</h2>
+        <div class="article-container">
+          <article>
+            <img
+              src="./asset/MicrosoftTeams-image (1).png"
+              alt="Experience icon"
+              class="icon"
+              />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+          </article>
+          <article>
+            <img
+            src="./asset/MicrosoftTeams-image (1).png"
+            alt
+          </article>
+    <script src="script.js"></script>
+  </body>
+</html>
 
