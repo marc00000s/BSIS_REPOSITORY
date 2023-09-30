@@ -1,6 +1,12 @@
-function togglemenu() {
-  const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
+const showMenu = (toggleId, navId) =>{
+  const toggle = document.getElementById(toggleId),
+  nav = document.getElementById(navId)
+
+  if(toggle && nav){
+      toggle.addEventListener('click', ()=>{
+          nav.classList.toggle('show')
+      })
+  }
 }
+showMenu('nav-toggle','nav-menu')
+
