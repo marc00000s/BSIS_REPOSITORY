@@ -1,7 +1,7 @@
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
-    top: var(--header-height);
+    top: 0.1rem;
     right: -100%;
     width: 80%;
     height: 100%;
