@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Encrypt and Decrypt
 
 #ENCRYPTION
@@ -29,4 +30,37 @@ for ch in code:
     text += chr(cipherVal)
 
     print(ch, "\t----------\t", ordVal)
+=======
+#Encrypt and Decrypt
+
+#ENCRYPTION
+text = input("Enter a one-word: ")
+num = int(input("Enter a number: "))
+code = ""
+for ch in text:
+    ordVal = ord(ch) 
+    cipherVal = ordVal - num
+    if cipherVal > ord('z'):
+        cipherVal = ord('a') + num - \
+            (ord('z') - ordVal + 1)
+    code += chr(cipherVal) 
+   
+    print(ch, "\t----------\t", ordVal)
+print('The Code is: ' + code)
+
+
+#DECRYPT
+code = input("Enter the cipher word: ")
+num = int(input("Enter a number: "))
+text = ""
+for ch in code:
+    ordVal = ord(ch)
+    cipherVal = ordVal + num
+    if cipherVal < ord('0'):
+        cipherVal = ord('Z') + num - \
+            (ord('a') + ordVal - 1 )
+    text += chr(cipherVal)
+
+    print(ch, "\t----------\t", ordVal)
+>>>>>>> cfb90f94e58db94165fafd29b463bc0d84a0668e
 print('The Text is: ' + text)
